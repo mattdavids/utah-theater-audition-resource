@@ -2,6 +2,7 @@ package com.utah.theater.audition.schedule.UtahTheaterAuditionResource.pojo;
 
 import org.springframework.data.annotation.Id;
 
+import java.time.Instant;
 import java.util.Date;
 
 public class Show {
@@ -13,12 +14,12 @@ public class Show {
     private String director;
     private String musicDirector;
     private String choreographer;
-    private Date opening;
-    private Date closing;
-    private Date audition;
-    private Date callback;
-    private Date rehearsalStart;
-    private Date rehearsalEnd;
+    private Instant opening;
+    private Instant closing;
+    private Instant audition;
+    private Instant callback;
+    private Instant rehearsalStart;
+    private Instant rehearsalEnd;
     private String link;
 
     public String getId() {
@@ -77,51 +78,51 @@ public class Show {
         this.choreographer = choreographer;
     }
 
-    public Date getOpening() {
+    public Instant getOpening() {
         return opening;
     }
 
-    public void setOpening(Date opening) {
+    public void setOpening(Instant opening) {
         this.opening = opening;
     }
 
-    public Date getClosing() {
+    public Instant getClosing() {
         return closing;
     }
 
-    public void setClosing(Date closing) {
+    public void setClosing(Instant closing) {
         this.closing = closing;
     }
 
-    public Date getAudition() {
+    public Instant getAudition() {
         return audition;
     }
 
-    public void setAudition(Date audition) {
+    public void setAudition(Instant audition) {
         this.audition = audition;
     }
 
-    public Date getCallback() {
+    public Instant getCallback() {
         return callback;
     }
 
-    public void setCallback(Date callback) {
+    public void setCallback(Instant callback) {
         this.callback = callback;
     }
 
-    public Date getRehearsalStart() {
+    public Instant getRehearsalStart() {
         return rehearsalStart;
     }
 
-    public void setRehearsalStart(Date rehearsalStart) {
+    public void setRehearsalStart(Instant rehearsalStart) {
         this.rehearsalStart = rehearsalStart;
     }
 
-    public Date getRehearsalEnd() {
+    public Instant getRehearsalEnd() {
         return rehearsalEnd;
     }
 
-    public void setRehearsalEnd(Date rehearsalEnd) {
+    public void setRehearsalEnd(Instant rehearsalEnd) {
         this.rehearsalEnd = rehearsalEnd;
     }
 
